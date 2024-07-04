@@ -1,0 +1,374 @@
+
+.gallery-section {
+  margin-bottom: 20px; /* Add a margin bottom to create space below the section */
+}
+
+
+#GALLERY .row {
+  margin: -10px;
+}
+
+#GALLERY .col-md-4 {
+  padding: 10px;
+}
+
+.gallery-image {
+  width: 355px;
+  height: 330px;
+  object-fit: cover;
+}
+
+.gallery-images {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+
+/* Lightbox */
+#lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: none;
+}
+
+#lightbox-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 800px;
+  max-height: 80%;
+  overflow: hidden;
+}
+
+#lightbox-content {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#lightbox-close {
+  position: absolute;
+  
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+
+  
+  
+  line-height: 1;
+  
+  top: 10px;
+  right: 15px;
+  text-shadow: none;
+}
+
+.video-gallery-container {
+  width: 900px;
+  font-family: "Roboto", sans-serif;
+
+  padding: 8px 0 0 0;
+  margin: 0 auto;
+  background-color: rgb(221, 214, 214);
+    border: 15px solid black;
+    padding: 5px;
+}
+
+.video-gallery-container,
+.video-gallery-container * {
+  box-sizing: border-box;
+}
+
+
+.video-gallery-container .video-gallery {
+  display: flex;
+ 
+  justify-content: center;
+  padding: 16px;
+  padding-top: 24px;
+  gap: 24px;
+  color: #050505;
+}
+
+.video-gallery h3.video-title {
+  line-height: 1.6;
+  font-weight: 700;
+  font-size: 20px;
+  width: 100%;
+}
+
+.video-gallery .thumbnail {
+  height: 120px;
+  cursor: pointer;
+}
+
+.video-gallery .video {
+  position: relative;
+}
+
+.video-gallery .video:hover .play-icon {
+  opacity: 1;
+}
+
+.video-gallery .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.video-gallery .video .play-icon img {
+  height: 50px;
+  width: 50px;
+}
+
+.video-gallery .all-videos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.video-gallery .responsive-iframe {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-top: 56.25%;
+  padding-bottom: 30px;
+}
+
+.video-gallery .responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .video-gallery-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .video-gallery-container .video-gallery {
+    flex-direction: column;
+  }
+
+  .video-gallery .all-videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .video-gallery .thumbnail {
+    height: unset;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .video-gallery .all-videos {
+    grid-template-columns: 1fr;
+  }
+
+  .video-gallery-container {
+    max-width: 400px;
+  }
+
+  .video-gallery-container h2.title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.sticky-header .navbar {
+  margin-bottom: 0;
+  padding: 1px 0; /* Adjust the top and bottom padding as desired */
+  height: 100px; /* Allow the navbar height to adjust dynamically */
+}
+
+.navbar-nav {
+  margin-left: 30px;
+}
+
+.nav-item {
+  margin-right: 30px;
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  font-size: 22px;
+}
+
+.container-section {
+  padding: 0 60px;
+  display: flex;
+
+}
+
+.text-section {
+  flex: 1;
+  padding: 50px 100px;
+  font-family: "Monotype Corsiva", cursive;
+  
+}
+
+.photo-section {
+  flex: 1;
+  padding: 0px;
+  flex-basis: 35%;
+}
+
+.centered-text {
+  text-align: center;
+  color: rgb(61, 45, 45);
+  font-weight: bold;
+
+}
+
+.photo {
+  max-width: 100%;
+  height: auto;
+}
+
+.circular-image {
+  border-radius: 50%;
+}
+
+.custom-bg-color {
+  background-color: #dcddd7;
+}
+
+
+
+.music-player {
+  position: relative;
+  width: 94%;
+  height: 150px; /* Adjust the height to your desired value */
+  overflow: hidden;
+  margin-bottom: 30px;
+  border: 5px solid rgba(73, 24, 2, 0.637);
+  border-radius: 12px;
+}
+
+.music-player1 {
+  position: relative;
+  width: 100%;
+  height: 86%; /* Adjust the height to your desired value */
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 5px solid rgba(73, 24, 2, 0.637);
+  border-radius: 12px;
+  
+}
+
+.music-player iframe {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+ 
+}
+.music-player1 iframe {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 3px solid orangered;
+}
+.whatsapp-logo {
+  width: 100px; /* Initial size of the logo */
+  animation: logoAnimation 2s infinite alternate;
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: scale(1); /* Initial scale */
+  }
+  50% {
+    transform: scale(1.2); /* Maximum scale */
+  }
+  100% {
+    transform: scale(1); /* Back to the initial scale */
+  }
+}
+
+#BIO {
+  background-image: url('W_BIO.jpg');
+  background-size: cover; /* Adjust the size behavior of the background */
+  background-position: center; /* Adjust the position of the background */
+}
+
+#Landing {
+  background-image: url('W1.jpg');
+  background-size: cover; /* Adjust the size behavior of the background */
+  background-position: center; /* Adjust the position of the background */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#shadowing{
+  text-shadow: 2px 2px rgba(231, 129, 129, 0.952);
+  flex-basis: 65%;
+}
+
+#bio_section{
+  color: black;
+  text-shadow: 1px 1px 2px white, 0 0 30px rgb(12, 34, 2), 0 0 10px rgb(48, 7, 7);
+  text-align: center;
+  padding: 0 20px;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+#GALLERY {
+  background-image: url('Gallery_Background.jpg');
+  background-size: cover; /* Adjust the size behavior of the background */
+  background-position: center; /* Adjust the position of the background */
+}
+
+#WORK {
+  background-image: url('work_Background.jpg');
+  background-size: cover; /* Adjust the size behavior of the background */
+  background-position: center; /* Adjust the position of the background */
+}
+
+#MUSIC {
+  background-image: url('Music_background.jpg');
+  background-size: cover; /* Adjust the size behavior of the background */
+  background-position: center; /* Adjust the position of the background */
+}
+
+#CONTACT {
+  background-image: url('W_Contact.jpg');
+  background-size: cover; /* Adjust the size behavior of the background */
+  background-position: center; /* Adjust the position of the background */
+}
